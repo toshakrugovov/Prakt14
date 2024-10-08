@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="primaryColor">#4CAF50</color>
+    <color name="primaryDarkColor">#388E3C</color>
+    <color name="accentColor">#FFC107</color>
+    <color name="buttonPressedColor">#388E3C</color>
+
+
+    <color name="primaryColornight">#BB86FC</color>
+    <color name="buttonBackgroundColornight">#BB86FC</color>
+    <color name="buttonTextColornight">#000000</color>
+</resources>

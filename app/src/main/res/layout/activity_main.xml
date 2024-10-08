@@ -1,0 +1,109 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Крестики-нолики"
+        android:textColor="@color/accentColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/gg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Change Theme"
+        android:src="@drawable/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="313dp"
+        android:layout_height="216dp"
+        android:layout_margin="32dp"
+        android:columnCount="3"
+        android:padding="8dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toTopOf="@id/statistics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gameTitle">
+
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/MyButtonStyle"
+            android:layout_margin="8dp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Побед: 0, Поражений: 0, Ничьи: 0"
+        android:textColor="@color/buttonBackgroundColornight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

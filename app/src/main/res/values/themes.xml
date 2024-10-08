@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SmenaTema" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>                      <!-- Основной цвет для кнопок и акцентов -->
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>              <!-- Темный цвет для статуса и навигации -->
+        <item name="colorAccent">@color/accentColor</item>                        <!-- Цвет акцента для кнопок и элементов --><!-- Цвет текста -->
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>              <!-- Стиль кнопок -->
+    </style>
+
+    <style name="Theme.SmenaTema" parent="Base.Theme.SmenaTema" />
+
+    <style name="MyButtonStyle">
+        <item name="android:textColor">@color/accentColor</item>                  <!-- Цвет текста на кнопках -->
+    </style>
+</resources>
